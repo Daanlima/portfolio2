@@ -122,6 +122,7 @@ ul.social-network li {
 	background: #333;
 	border:2px solid #fff;
 	border-radius: 0;
+	margin-bottom: 10px;
 }
 
 .buttons .btndnl:hover{
@@ -177,5 +178,13 @@ footer{
 }
 
 .navbar{
-	margin-top:-35px;
+}
+
+.numberex{
+	color:#fff;
+}
+
+.numberex span{
+	font-weight: 900;
+	font-size:2em;
 }
