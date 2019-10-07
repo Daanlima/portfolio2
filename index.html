@@ -18,11 +18,45 @@
 
   <body>
 
+    <div id="loader">
+       <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="navarea transition-width">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+              Daniel:LF
+              </a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse" data-toggle="collapse" data-target="#navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
+                <li><a href="#tab2" data-toggle="tab">Skills</a></li>
+                <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
+                <li><a href="#tab4" data-toggle="tab">Projects</a></li>
+                <li><a href="#tab5" data-toggle="tab">About me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </div>
+
     
-  	<div class="row fullheight">
+  	<div class="row fullheight" id="mainpage">
 
-     <div class="menu col-sm-12 col-md-6 col-lg-6">
-
+     <div class="menu col-sm-12 col-md-4  col-lg-6 transition-width">
+      <center>
             <ul class="navbar text-center">
 
                         <div class="profile-header-container">
@@ -39,49 +73,47 @@
                         <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" class="icoGitHub" title="Github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" class="icoStackOverflow" title="StackOverflow"><i class="fab fa-stack-overflow"></i></a></li>
                     </ul>
                 </li>
 
-                <li class="active"><a href="#tab1" data-toggle="tab">Início</a></li>
-                <li><a href="#tab2" data-toggle="tab">Competências</a></li>
-                <li><a href="#tab3" data-toggle="tab">Experiências</a></li>
-                <li><a href="#tab4" data-toggle="tab">Projetos</a></li>
-                <li><a href="#tab5" data-toggle="tab">Sobre Mim</a></li>
+                <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
+                <li><a href="#tab2" data-toggle="tab" class="skills">Skills</a></li>
+                <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
+                <li><a href="#tab4" data-toggle="tab">Projects</a></li>
+                <li><a href="#tab5" data-toggle="tab">About me</a></li>
             </ul>
+        </center>
      </div>
 
-     <div class="content col-sm-12 col-md-6 col-lg-6">
-
+     <div class="content col-sm-12 col-md-8 col-lg-6 transition-width">
 
            <div class="tab-content text-center">
                 <div class="tab-pane active" id="tab1">
-                   <h1 class="typing">Eu sou
+                   <h1 class="typing">I'm
                       <span
                          class="txt-rotate"
                          data-period="2000"
-                         data-rotate='[  "Daniel Lima", "FrontEnd Dev.", "Brasileiro." ]'></span>
+                         data-rotate='[  "Daniel Lima", "FrontEnd Dev.", "Brazilian." ]'></span>
                     </h1>
 
                     <ul class="infosobremim">
                       <li> <span class="fa fa-arrow-up"></span> Age: <span class="infosobremimtexto">18</span> </li>
                       <li> <span class="fa fa-birthday-cake"></span> Birthday: <span class="infosobremimtexto">12/02/2001</span> </li>
-                      <li> <span class="fa fa-home"></span> I live in: <span class="infosobremimtexto">Saúde/Sacomã</span> </li>
+                      <li> <span class="fa fa-home"></span> Living in: <span class="infosobremimtexto">Saúde/Sacomã [BRAZIL]</span> </li>
                       <li> <span class="fa fa-graduation-cap"></span> Studying: <span class="infosobremimtexto">FIAP - Web Full Stack</span> </li>
                       <li> <span class="fa fa-envelope"></span> E-mail: <span class="infosobremimtexto">DAANIELLF@GMAIL.COM</span> </li>
                       <li> <span class="fa fa-phone"></span> Phone: <span class="infosobremimtexto">+55 (11)95493-5760</span> </li>
-                      <li> <span class="fa fa-briefcase"></span> Current Position: <span class="infosobremimtexto">Desenvolvedor FrontEnd Júnior</span> </li>
                       <li>
                         <div class="buttons">
                           <a href="#" class="btn btn-lg btndnl">CV.PDF DOWNLOAD</a>
-                          <a href="#" class="btn btn-lg btndnl">CHECK OUT MY OTHER PORTFOLIO</a>
+                          <a href="#" class="btn btn-lg btndnl">MY OTHER PORTFOLIO</a>
                         </div>
                       </li>
                     </ul>
-
-                    
-
                 </div>
+
                 <div class="tab-pane" id="tab2">
 
                   <div class="tab-content text-center">
@@ -92,8 +124,7 @@
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-html5"></span> HTML5</p>
-                           <p class="typeskill">Advanced</p>
+                           <p><span class="fab fa-html5"></span> HTML5 <span class="typeskill muted">Advanced</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -108,11 +139,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-stack-exchange"></span> English</p>
-                           <p class="typeskill">Advanced</p>
+                           <p><span class="fab fa-stack-exchange"></span> English <span class="typeskill muted">Advanced</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -127,11 +158,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-css3"></span> CSS3</p>
-                           <p class="typeskill">Advanced</p>
+                           <p><span class="fab fa-css3"></span> CSS3 <span class="typeskill muted">Advanced</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -146,11 +177,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fa fa-code"></span> C#</p>
-                           <p class="typeskill">Intermediate</p>
+                           <p><span class="fa fa-code"></span> C# <span class="typeskill muted">Intermediate</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -165,11 +196,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><i class="fab fa-js"></i> JavaScript</p>
-                           <p class="typeskill">Intermediate</p>
+                           <p><i class="fab fa-js"></i> JS <span class="typeskill muted">Intermediate</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -184,11 +215,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-angular"></span> AngularJS</p>
-                           <p class="typeskill">Basic</p>
+                           <p><span class="fab fa-angular"></span> AngJS <span class="typeskill muted">Basic</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -203,11 +234,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fa fa-book"></span> RestSharp API's</p>
-                           <p class="typeskill">Basic</p>
+                           <p><span class="fa fa-book"></span> RestSharp <span class="typeskill muted">Basic</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -222,11 +253,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-java"></span> Java</p>
-                           <p class="typeskill">Basic</p>
+                           <p><span class="fab fa-java"></span> Java <span class="typeskill muted">Basic</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -241,11 +272,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fab fa-bootstrap"></span> Bootstrap</p>
-                           <p class="typeskill">Upper-Intermediate</p>
+                           <p><span class="fab fa-bootstrap"></span> Bootstrap <span class="typeskill muted">Advanced</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -260,11 +291,11 @@
 
                         </div>
 
+
                         <div class="singleskill col-sm-12 col-md-6 col-lg-6">
 
                           <div class="pull-left nameskill">
-                           <p><span class="fa fa-paint-brush"></span> Photoshop / Illustrator</p>
-                           <p class="typeskill">Upper-Intermediate</p>
+                           <p><span class="fa fa-paint-brush"></span> PS/AI <span class="typeskill muted">Advanced</span></p>
                           </div>
 
                           <div class="pull-right">
@@ -303,15 +334,49 @@
 
     </div>
 
-    <footer>
-      <p>Site desenvolvido e pensado por Daniel Lima Fortes</p>
-    </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/preloader.js"></script>
   <script src="js/script.js"></script>
   <script src="js/script_tabs.js"></script>
+
+  <script type="text/javascript">
+    function resize() {
+        if ($(window).width() < 991) {
+          $('.content').addClass('col-lg-12');
+          $('.content').addClass('col-md-12');
+          $('.content').removeClass('col-lg-6');
+          $('.content').removeClass('col-md-6');
+          $('.menu').addClass('displaynone');
+          $('.menu').removeClass('displayblock');
+        }
+        else {
+          $('.content').addClass('col-lg-6');
+          $('.content').addClass('col-md-6');
+          $('.content').removeClass('col-lg-12');
+          $('.content').removeClass('col-md-12');
+          $('.menu').addClass('displayblock');
+          $('.menu').removeClass('displaynone');
+        }
+    }
+
+    $(document).ready( function() {
+        $(window).resize(resize);
+        resize();
+    });
+  </script>
+
+  <script type="text/javascript">
+    function resize() {
+        if ($(window).width() < 991) {
+          $('.content').addClass('col-md-8');
+          $('.menu').addClass('col-md-4');
+          $('.content').removeClass('col-md-6');
+          $('.menu').removeClass('col-md-6');
+      }
+    }
+  </script>
 
   </body>
 </html>
