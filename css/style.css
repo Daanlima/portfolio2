@@ -130,6 +130,7 @@ body{
 
 .menu{
 	left:0;
+	margin-left:-20px;
 }
 
 .content{
@@ -278,21 +279,10 @@ footer p{
 	margin-left: 10px;
 }
 
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+.titulocompeducation{
+	margin-bottom: 25px;
 }
 
-.dotfill{
-  height: 10px;
-  width: 10px;
-  background-color: #33ACFF;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 .nameskill{
 	color:#fff;
@@ -305,10 +295,13 @@ footer p{
 	padding:20px;
 }
 
-.resume{
+.resumecontainer{
+	background:#222;
+	height:550px;
+	max-height:550px;
 	border:10px solid #333;
 	border-radius: 20px;
-	background:#222;
+	padding:20px;
 }
 
 .singleskill{
@@ -409,4 +402,46 @@ footer p{
 .progress-bar{
 	background:#33ACFF;
 	border-radius:2px;
+}
+
+.resumeeducation{
+	color:#fff;
+}
+
+.educationitem{
+	border-radius: 10px;
+	background:#1c1c1c;
+	margin-bottom:15px;
+	padding:15px;
+
+}
+
+.educationyear{
+	color:#777 !important;
+	letter-spacing: 5px;
+}
+
+.educationname{
+	padding-bottom: 6px;
+	border-bottom: 2px dashed #666;
+}
+
+.resumeskills{
+	border-right:5px dashed #333;
+}
+
+.resumeeducation{
+	display:block;
+	max-height:470px;
+	overflow-x: auto;
+}
+
+.godown{
+	color:#fff;
+}
+
+.resumecontainer-lowscreen{
+	border:10px solid #333;
+	border-radius: 20px;
+	padding:10px;
 }

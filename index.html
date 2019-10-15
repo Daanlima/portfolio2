@@ -113,12 +113,13 @@
               <div class="tab-pane" id="tab2">
 
                 <div class="tab-content text-center">
-                    <div class="tab-pane active" id="tab1">
 
-                        <div class="resume col-md-6 text-left">
-                        <h1 class="titulocomp">--My Skills</h1>
+                  <div class="resumeall resumecontainer">
 
-                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+                        <div class="resume resumeskills col-md-6 text-left">
+                        <h1 class="titulocomp titulocompskills">My Skills</h1>
+
+                          <div class="singleskill">
 
                             <div class="nameskill text-left">
                              <p><span class="fa fa-globe"></span> HTML / CSS / Bootstrap <span class="typeskill muted">Advanced</span></p>
@@ -133,7 +134,7 @@
                           </div>
 
 
-                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+                          <div class="singleskill">
 
                             <div class="text-left nameskill">
                              <p><i class="fab fa-js"></i> JS <span class="typeskill muted">Intermediate</span></p>
@@ -147,7 +148,7 @@
 
                           </div>
 
-                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+                          <div class="singleskill">
 
                             <div class="text-left nameskill">
                              <p><span class="fa fa-code"></span> C# <span class="typeskill muted">Intermediate</span></p>
@@ -162,7 +163,7 @@
                           </div>
 
 
-                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+                          <div class="singleskill">
 
                             <div class="text-left nameskill">
                              <p><span class="fa fa-paint-brush"></span> Photoshop / Illustrator </p>
@@ -178,12 +179,36 @@
                        
                         </div>
 
-                        <div class="resume text-left col-md-6">
-                        <h1 class="titulocomp">--Education</h1>
+                        <div class="resume resumeeducation text-left col-md-6" onscroll="scrolled(this)">
+                        <h1 class="titulocomp titulocompeducation">Education</h1>
+
+                        <div class="educationitem col-md-12">
+                          <h3 class="educationname">FIAP School</h3>
+                          <h3 class="pull-right">2017-2018</h3>
+                          <h4 class="muted">I.T Technical <b>High School</b> </h4>
+                          <h5 class="educationyear">[3 Years, Certificated]</h5>
+                        </div>
+
+                        <div class="educationitem col-md-12">
+                          <h3 class="educationname">FIAP</h3>
+                          <h3 class="pull-right">2020-2021</h3>
+                          <h4 class="muted">Web Development Full Stack <b>College</b> </h4>
+                          <h5 class="educationyear">[2 Years, 1º Semester]</h5>
+                        </div>
+
+                        <div class="educationitem col-md-12">
+                          <h3 class="educationname">Capital English Solutions</h3>
+                          <h3 class="pull-right">Jan-Jul/2019</h3>
+                          <h4 class="muted">Advanced Speaking and Grammar <b>English</b> </h4>
+                          <h5 class="educationyear">[2 Years, 1º Semester]</h5>
+                        </div>
 
                          
                         </div>
-                  </div>
+
+                        <span class="text-center fa fa-arrow-down godown floating"></span>
+
+                        </div>
                 </div>
 
               </div>
@@ -255,6 +280,17 @@
           $('.content').removeClass('col-md-6');
           $('.menu').removeClass('col-md-6');
       }
+
+      if ($(window).width() < 993) {
+        $('.resumeall').removeClass('resumecontainer');
+        $('.resumeall').addClass('resumecontainer-lowscreen');
+      }
+
+      if ($(window).width() > 993) {
+        $('.resumeall').addClass('resumecontainer');
+        $('.resumeall').removeClass('resumecontainer-lowscreen');
+      }
+
     }
   </script>
 
@@ -291,6 +327,23 @@
         $('.menu').addClass('col-md-6');
       }); 
     });;
+  </script>
+
+  <script type="text/javascript">
+    function scrolled(o)
+        {
+            //visible height + pixel scrolled = total height
+            if(o.offsetHeight + o.scrollTop != o.offsetHeight)
+            {
+              $('.godown').removeClass('fa-arrow-down');
+              $('.godown').addClass('fa-arrow-up');
+            }
+
+            if (o.offsetHeight + o.scrollTop == o.offsetHeight) {
+              $('.godown').addClass('fa-arrow-down');
+              $('.godown').removeClass('fa-arrow-up');
+            }
+        }
   </script>
 
   </body>
