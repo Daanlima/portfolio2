@@ -5,12 +5,29 @@ body{
 	overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33ACFF;
+}
+
 .displaynone{
 	display:none;
 }
 
 .displayblock{
 	display:block;
+}
+
+.positionfixed{
+	position:fixed;
 }
 
 .transition-width { 
@@ -97,6 +114,13 @@ body{
     header a.menu-mobile {display:block;}
 }
 
+.navbar-small{
+	background:#fff;
+}
+
+.navbar-small ul li{
+}
+
 .menu, .content{
 	position:fixed;
 	display: flex;
@@ -144,7 +168,7 @@ body{
 .profile-header-container{
     margin: 0 auto;
     text-align: center;
-    margin-bottom: -30px;
+    margin-left:0px !important;
 }
 
 .profile-header-img {
@@ -251,7 +275,7 @@ footer p{
 .titulocomp{
 	color:#fff;
 	font-weight: 900;
-	margin-bottom: 30px;
+	margin-left: 10px;
 }
 
 .dot {
@@ -277,9 +301,18 @@ footer p{
 	margin-bottom: 0;
 }
 
-.singleskill{
+#tab1{
 	padding:20px;
-	border-bottom:1px dashed #666;
+}
+
+.resume{
+	border:10px solid #333;
+	border-radius: 20px;
+	background:#222;
+}
+
+.singleskill{
+	padding:15px;
 }
 
 .nameskill .typeskill{
@@ -346,4 +379,34 @@ footer p{
 
 .navbar-brand .pc image-rendering: {
 	max-width: 100px;
+}
+
+.navbarmenu{
+	margin-top:-20px;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.progress{
+	background:#444;
+	border-radius:5px;
+	padding:4px;
+}
+
+.progress-bar{
+	background:#33ACFF;
+	border-radius:2px;
 }

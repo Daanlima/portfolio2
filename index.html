@@ -23,7 +23,7 @@
     </div>
 
     <div class="navarea transition-width">
-      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top navbar-small">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -36,16 +36,13 @@
               Daniel:LF
               </a>
         </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse" data-toggle="collapse" data-target="#navbarCollapse">
+        <div id="navbarCollapse" class="collapse navbar-collapse" data-toggle="collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
-                <li><a href="#tab2" data-toggle="tab">Skills</a></li>
-                <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
-                <li><a href="#tab4" data-toggle="tab">Projects</a></li>
-                <li><a href="#tab5" data-toggle="tab">About me</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
+                <li class="item-home-tab active"><a href="#tab1" data-toggle="tab">Home</a></li>
+                <li id="resume-tab" class="item-tab"><a href="#tab2" data-toggle="tab">Resume</a></li>
+                <li class="item-tab"><a href="#tab3" data-toggle="tab">Experiences</a></li>
+                <li class="item-tab"><a href="#tab4" data-toggle="tab">Projects</a></li>
+                <li class="item-tab"><a href="#tab5" data-toggle="tab">About me</a></li>
             </ul>
         </div>
     </div>
@@ -55,11 +52,11 @@
     
   	<div class="row fullheight" id="mainpage">
 
-     <div class="menu col-sm-12 col-md-4  col-lg-6 transition-width">
+     <div class="menu col-sm-12 col-md-6 col-lg-6 transition-width">
       <center>
-            <ul class="navbar text-center">
+            <ul class="navbar navbarmenu text-center">
 
-                        <div class="profile-header-container">
+                        <div class="floating profile-header-container">
                             <div class="profile-header-img">
                                 <img class="img-circle" src="img/me.jpg" />
                                 <div class="rank-label-container">
@@ -69,25 +66,24 @@
                         </div>
                 <li>
                   <ul class="social-network text-center">
-                        <li><a href="https://www.facebook.com/daniellimafortes12" target="_blank" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" class="icoGitHub" title="Github"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#" class="icoStackOverflow" title="StackOverflow"><i class="fab fa-stack-overflow"></i></a></li>
+                        <li><a href="https://www.instagram.com/daan_lf/" class="icoInstagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/Daanlf12" class="icoTwitter" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/Daanlima" class="icoGitHub" title="Github" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/12043307/daniel-lima" class="icoStackOverflow" title="StackOverflow" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
                     </ul>
                 </li>
 
-                <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
-                <li><a href="#tab2" data-toggle="tab" class="skills">Skills</a></li>
-                <li><a href="#tab3" data-toggle="tab">Experiences</a></li>
-                <li><a href="#tab4" data-toggle="tab">Projects</a></li>
-                <li><a href="#tab5" data-toggle="tab">About me</a></li>
+                <li class="item-home-tab active"><a href="#tab1" data-toggle="tab">Home</a></li>
+                <li class="item-tab"><a href="#tab2" data-toggle="tab" class="skills">Resume</a></li>
+                <li class="item-tab"><a href="#tab3" data-toggle="tab">Experiences</a></li>
+                <li class="item-tab"><a href="#tab4" data-toggle="tab">Projects</a></li>
+                <li class="item-tab"><a href="#tab5" data-toggle="tab">About me</a></li>
             </ul>
         </center>
      </div>
 
-     <div class="content col-sm-12 col-md-8 col-lg-6 transition-width">
+     <div class="content col-sm-12 col-md-6 col-lg-6 transition-width">
 
            <div class="tab-content text-center">
                 <div class="tab-pane active" id="tab1">
@@ -114,207 +110,83 @@
                     </ul>
                 </div>
 
-                <div class="tab-pane" id="tab2">
+              <div class="tab-pane" id="tab2">
 
-                  <div class="tab-content text-center">
+                <div class="tab-content text-center">
                     <div class="tab-pane active" id="tab1">
-                      <h1 class="titulocomp">Skills</h1>
-                      <hr style="border:3px dashed #fff; max-width: 150px;">
 
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
+                        <div class="resume col-md-6 text-left">
+                        <h1 class="titulocomp">--My Skills</h1>
 
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-html5"></span> HTML5 <span class="typeskill muted">Advanced</span></p>
-                          </div>
+                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
 
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
+                            <div class="nameskill text-left">
+                             <p><span class="fa fa-globe"></span> HTML / CSS / Bootstrap <span class="typeskill muted">Advanced</span></p>
                             </div>
+
+                           <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                              aria-valuemin="0" aria-valuemax="100" style="width:88%">
+                              </div>
+                            </div>
+
                           </div>
 
+
+                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="text-left nameskill">
+                             <p><i class="fab fa-js"></i> JS <span class="typeskill muted">Intermediate</span></p>
+                            </div>
+
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="text-left nameskill">
+                             <p><span class="fa fa-code"></span> C# <span class="typeskill muted">Intermediate</span></p>
+                            </div>
+
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                              aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <div class="singleskill col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="text-left nameskill">
+                             <p><span class="fa fa-paint-brush"></span> Photoshop / Illustrator </p>
+                            </div>
+
+                            <div class="progress">
+                              <div class="text-left progress-bar" role="progressbar" aria-valuenow="70"
+                              aria-valuemin="0" aria-valuemax="100" style="width:93%">
+                              </div>
+                            </div>
+
+                          </div>
+                       
                         </div>
 
+                        <div class="resume text-left col-md-6">
+                        <h1 class="titulocomp">--Education</h1>
 
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-stack-exchange"></span> English <span class="typeskill muted">Advanced</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
+                         
                         </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-css3"></span> CSS3 <span class="typeskill muted">Advanced</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fa fa-code"></span> C# <span class="typeskill muted">Intermediate</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><i class="fab fa-js"></i> JS <span class="typeskill muted">Intermediate</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-angular"></span> AngJS <span class="typeskill muted">Basic</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fa fa-book"></span> RestSharp <span class="typeskill muted">Basic</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-java"></span> Java <span class="typeskill muted">Basic</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fab fa-bootstrap"></span> Bootstrap <span class="typeskill muted">Advanced</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-
-
-                        <div class="singleskill col-sm-12 col-md-6 col-lg-6">
-
-                          <div class="pull-left nameskill">
-                           <p><span class="fa fa-paint-brush"></span> PS/AI <span class="typeskill muted">Advanced</span></p>
-                          </div>
-
-                          <div class="pull-right">
-                           <div style="text-align:center">
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dotfill"></span>
-                              <span class="dot"></span>
-                            </div>
-                          </div>
-
-                        </div>
-                     
-
-                    </div>
                   </div>
-
                 </div>
+
+              </div>
 
                 <div class="tab-pane" id="tab3">
                     <div class="tab-content text-center">
@@ -340,6 +212,14 @@
   <script src="js/preloader.js"></script>
   <script src="js/script.js"></script>
   <script src="js/script_tabs.js"></script>
+
+  <script type="text/javascript">
+    //tooltip
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
   <script type="text/javascript">
     function resize() {
@@ -376,6 +256,41 @@
           $('.menu').removeClass('col-md-6');
       }
     }
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.item-tab a').click(function(event) {
+        $('.menu').removeClass('col-lg-6');
+        $('.menu').removeClass('col-md-6');
+        $('.content').removeClass('col-lg-6');
+        $('.content').removeClass('col-md-6');
+
+        $('.content').addClass('col-lg-9');
+        $('.content').addClass('col-md-9');
+        $('.menu').addClass('col-lg-3');
+        $('.menu').addClass('col-md-3');
+      }); 
+
+      
+    });;
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.item-home-tab a').click(function(event) {
+        $('.content').removeClass('col-lg-9');
+        $('.content').removeClass('col-md-9');
+        $('.menu').removeClass('col-lg-3');
+        $('.menu').removeClass('col-md-3');
+
+        $('.content').addClass('col-lg-6');
+        $('.content').addClass('col-md-6');
+        $('.menu').addClass('col-lg-6');
+        $('.menu').addClass('col-md-6');
+      }); 
+    });;
   </script>
 
   </body>
